@@ -151,6 +151,15 @@ Similar code was also found in the wild in this report:  https://www.joesandbox.
 
 ## A79
 ## A83
+Work in progress / TODO 
+
+Seems to compare speed for array push/pop vs adding/removing to localStorage using setItem and removeItem.
+
+When I tried on both Chrome and Firefox, the number of operations for localStorage was orders of magnitude lower than for the array. 
+Maybe Puppeteer or similar implement localStorage as an array? 
+
+
+
 ## A84
 ## A85
 ## A86
