@@ -93,11 +93,25 @@ Code is very similar to: <a href="https://vah13.github.io/AVDetection/">https://
 ## A68
 ## A69
 ## A70
+
+Simple color depth check. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Screen/colorDepth
+
+
+
+
 ## A71
 ## A72
 ## A73
 ## A74
 ## A75
+Checks if the function <code>sendBeacon</code> is available. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
+
+
+
 ## A76
 ## A77
 ## A78
