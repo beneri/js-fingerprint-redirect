@@ -9,7 +9,7 @@ Please feel free to add information about the script or the individual functions
 
 
 # Fingerprinting functions
-Each function $A_i$ return a string containg " $a_i$ : $v$ ", where $v$ is usally $0$, $1$, $n$, or $e$ for exception. For example, A70 might return "a70:24", where 24 is the <code>window.screen.colorDepth</code>.
+Each function $A_i$ return a string containg " $a_i$ : $v$ ", where $v$ is usally $0$, $1$, 'true', 'false', $n$, or $e$ for exception. For example, A70 might return "a70:24", where 24 is the <code>window.screen.colorDepth</code>.
 
 
 For each function I think it would be good to add:
@@ -106,14 +106,30 @@ https://developer.mozilla.org/en-US/docs/Web/API/Screen/colorDepth
 ## A73
 ## A74
 ## A75
-Checks if the function <code>sendBeacon</code> is available. 
+Checks if the function <code>navigator.sendBeacon</code> is available. 
 
 https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
 
 
 
 ## A76
+Checks if the function <code>navigator.geolocation</code> is available. 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation
+
+
 ## A77
+Returns 'true' if Puppeteer is used.
+
+Throws an error with <code>new Error( 'Test Error' );</code> then inspects the stack trace looking for
+<code>puppeteer_evaluation_script</code>
+
+
+https://github.com/digitalhurricane-io/puppeteer-detection-100-percent/blob/master/public/main.js
+
+https://www.blackhatworld.com/seo/how-to-detect-puppeteer-with-100-accuracy.1235754/
+
+
 ## A78
 ## A79
 ## A83
