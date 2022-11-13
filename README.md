@@ -18,11 +18,10 @@ For each function I think it would be good to add:
 - Links and references.
 
 ## A1
-Returns 1 is the two first characters in <code>navigator.language</code> is 
+Returns 1 if the two first characters in <code>navigator.language</code> is 
 the same as the two first characters in <code>navigator.languages[0]</code>.
 
 This should always be true as per the standard: 
-
 https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages
 
 
@@ -36,6 +35,18 @@ https://github.com/fingerprintjs/fingerprintjs/blob/bf7039da92655f981b2b958bb51a
 
 
 ## A2
+
+Does a few comparisons of screen width and height to available width and height, using
+<code>window.screen.width</code>, <code>window.screen.availWidth</code>, etc. 
+
+Once again, similar to fingerprint JS, in particular <code>getHasLiedResolution</code>  https://github.com/fingerprintjs/fingerprintjs/blob/bf7039da92655f981b2b958bb51a031e15601dbe/fingerprint2.js#L1106-L1108
+
+However, in this code they do more checks, including this with the magic number 0x14 = 20 in decimal. 
+<code>
+window[ 'screen' ][ 'width' ] === window[ 'screen' ][ 'availHeight' ] + 0x14
+</code>
+
+
 ## A3
 ## A4
 ## A5
