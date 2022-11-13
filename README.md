@@ -9,7 +9,7 @@ Please feel free to add information about the script or the individual functions
 
 
 # Fingerprinting functions
-Each function $A_i$ return a string containg " $a_i$ : $v$ ", where $v$ is usally $0$, $1$, 'true', 'false', $n$, or $e$ for exception. For example, A70 might return "a70:24", where 24 is the <code>window.screen.colorDepth</code>.
+Each function $A_i$ return a string containing " $a_i$ : $v$ ", where $v$ is usually $0$, $1$, $e$ for exception. But in general $v$ can have any value. For example, A70 might return "a70:24", where 24 is the <code>window.screen.colorDepth</code>.
 
 
 For each function I think it would be good to add:
@@ -18,6 +18,23 @@ For each function I think it would be good to add:
 - Links and references.
 
 ## A1
+Returns 1 is the two first characters in <code>navigator.language</code> is 
+the same as the two first characters in <code>navigator.languages[0]</code>.
+
+This should always be true as per the standard: 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator/languages
+
+
+Maybe stolen from https://github.com/fingerprintjs/fingerprintjs 
+
+It is very similar to <code>getHasLiedLanguages</code> that checks if the client is lying about its languages.
+This is in version 2.1.0, can't find it in the latest version.
+
+https://github.com/fingerprintjs/fingerprintjs/blob/bf7039da92655f981b2b958bb51a031e15601dbe/fingerprint2.js#L1091-L1105
+
+
+
 ## A2
 ## A3
 ## A4
