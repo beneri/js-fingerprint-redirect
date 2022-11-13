@@ -75,6 +75,13 @@ For each function I think it would be good to add:
 ## A57
 ## A58
 ## A59
+
+Returns 1 if Kaspersky is detected. 
+Looks for an element with id "frmin" and then checks for related strings, such as "kaspersky"
+
+
+Code is very similar to: <a href="https://vah13.github.io/AVDetection/">https://vah13.github.io/AVDetection/</a>.
+
 ## A60
 ## A61
 ## A62
