@@ -131,6 +131,24 @@ https://www.blackhatworld.com/seo/how-to-detect-puppeteer-with-100-accuracy.1235
 
 
 ## A78
+Also checks if Puppeteer is used.
+
+
+First triggers an exception using <code>document.createElement(0);</code>
+then looks for a line in the stack trace matching the regex 
+<code>/Ob[cej]{3}t\.a[lp]{3}y[\(< ]{3}an[oynm]{5}us>/</code>. 
+For example matching <code>Object.apply (<anonymous>:80:31)</code>.
+
+Related: 
+
+https://github.com/berstend/puppeteer-extra/issues/318
+
+
+Similar code was also found in the wild in this report:  https://www.joesandbox.com/analysis/598617/0/lighthtml
+
+
+
+
 ## A79
 ## A83
 ## A84
