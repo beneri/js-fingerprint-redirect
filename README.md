@@ -8,6 +8,12 @@ The code has 88 functions, A1 to A92 (with some gaps), each probing/testing diff
 Please feel free to add information about the script or the individual functions. Perhaps this is a known library already? Help with deobfuscation is also appreciated! 
 
 
+# General functions
+<code>go()</code>  Returns the OS based on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent">Navigator.userAgent</a>. 
+Very similar to this code in FingerprintJS https://github.com/fingerprintjs/fingerprintjs/blob/bf7039da92655f981b2b958bb51a031e15601dbe/fingerprint2.js#L1110-L1129
+
+<code>gb()</code> Returns the browser based on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent">Navigator.userAgent</a>.  
+
 # Fingerprinting functions
 Each function $A_i$ return a string containing " $a_i$ : $v$ ", where $v$ is usually $0$, $1$, $e$ for exception. But in general $v$ can have any value. For example, A70 might return "a70:24", where 24 is the <code>window.screen.colorDepth</code>.
 
@@ -48,6 +54,9 @@ window[ 'screen' ][ 'width' ] === window[ 'screen' ][ 'availHeight' ] + 0x14
 
 
 ## A3
+
+
+
 ## A4
 ## A5
 ## A6
