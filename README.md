@@ -54,7 +54,10 @@ window[ 'screen' ][ 'width' ] === window[ 'screen' ][ 'availHeight' ] + 0x14
 
 
 ## A3
+Tries to detect if the client is lying about its OS by comparing <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/oscpu">Navigator.oscpu</a> and the
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent">Navigator.userAgent</a>.
 
+Again, copying FingerprintJS: <a href="https://github.com/fingerprintjs/fingerprintjs/blob/bf7039da92655f981b2b958bb51a031e15601dbe/fingerprint2.js#L1139-L1152">fingerprint2.js:1139-1152</a>.
 
 
 ## A4
